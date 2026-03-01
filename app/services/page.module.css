@@ -1,0 +1,292 @@
+.page {
+  padding-top: 64px;
+}
+
+.hero {
+  padding: 80px 24px 72px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.heroInner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-accent-text);
+  background: var(--color-accent-light);
+  border: 1px solid #c7d2fe;
+  border-radius: 100px;
+  padding: 4px 12px;
+  margin-bottom: 20px;
+}
+
+.heroInner h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.heroInner p {
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.services {
+  padding: 80px 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.servicesInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.serviceCard {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.serviceCard:hover {
+  border-color: #c7d2fe;
+  box-shadow: var(--shadow-md);
+}
+
+.serviceIcon {
+  width: 44px;
+  height: 44px;
+  background: var(--color-accent-light);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.serviceCard h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.serviceCard p {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featureList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.featureList li svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.pricing {
+  padding: 80px 24px;
+  background: var(--color-surface);
+}
+
+.pricingInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sectionHeader h2 {
+  font-family: var(--font-display);
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.sectionHeader p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.planCard {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+}
+
+.planCardHighlighted {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.popularBadge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+.planCard h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.planCardHighlighted h3 {
+  color: white;
+}
+
+.planPrice {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 8px 0 4px;
+}
+
+.planCardHighlighted .planPrice {
+  color: white;
+}
+
+.planDesc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.planCardHighlighted .planDesc {
+  color: rgba(255,255,255,0.75);
+}
+
+.divider {
+  height: 1px;
+  background: var(--color-border);
+  margin-bottom: 20px;
+}
+
+.planCardHighlighted .divider {
+  background: rgba(255,255,255,0.2);
+}
+
+.planFeatures {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.planFeatures li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.planCardHighlighted .planFeatures li {
+  color: rgba(255,255,255,0.9);
+}
+
+.planFeatures li svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.planCardHighlighted .planFeatures li svg {
+  color: white;
+}
+
+.planBtn {
+  display: block;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all 0.2s;
+  background: var(--color-accent);
+  color: white;
+}
+
+.planBtn:hover {
+  background: var(--color-accent-hover);
+}
+
+.planBtnHighlighted {
+  background: white;
+  color: var(--color-accent);
+}
+
+.planBtnHighlighted:hover {
+  background: #f0f0ff;
+}
+
+@media (max-width: 768px) {
+  .servicesGrid,
+  .pricingGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
